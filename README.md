@@ -22,7 +22,7 @@ Lista de tareas no persistente, donde es posible crear un tarea con un titulo y 
     <img src="https://github.com/lopepardo/Miniprojects/blob/main/images/Tasklist.PNG" width="600"></img>
 </p>
 
-<h2 id="digitalclock">Lista de tareas simple</h2>
+<h2 id="digitalclock">Reloj digital</h2>
 
 ### Descripción
 
