@@ -1,0 +1,13 @@
+.btn {
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.15rem;
+  color: $white-color;
+}
+
+.btn--success {
+  background-color: $success-color;
+}
+
+.btn--warning {
+  background-color: $warning-color;
+}

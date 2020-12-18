@@ -1,0 +1,27 @@
+body {
+  font-family: "Kalam", cursive;
+  background-color: $grey-color;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+p {
+  font-size: $p-font-size;
+  font-weight: 300;
+}

@@ -1,0 +1,239 @@
+/* Colors */
+/* Layout */
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+:root {
+  --width-layout: 0; }
+
+/* Fonts */
+/* z-index */
+/* Breakpoints */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dd,
+button,
+fieldset,
+input,
+figure,
+label {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+button {
+  background-color: inherit;
+  border-width: 0;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+label {
+  display: block; }
+
+input,
+textarea {
+  width: 100%;
+  background-color: inherit;
+  border: inherit; }
+
+input:focus,
+textarea:focus {
+  outline: inherit; }
+
+input::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol,
+dd {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+cite {
+  font-style: normal; }
+
+fieldset {
+  border-width: 0; }
+
+body {
+  font-family: "Kalam", cursive;
+  background-color: #f7f7f7; }
+
+h1,
+h2,
+h3 {
+  font-weight: 700; }
+
+h1 {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 1.4rem; }
+
+h3 {
+  font-size: 0.8rem; }
+
+p {
+  font-size: 1rem;
+  font-weight: 300; }
+
+.btn {
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.15rem;
+  color: white; }
+
+.btn--success {
+  background-color: #3c723c; }
+
+.btn--warning {
+  background-color: #933939; }
+
+.l-grid {
+  display: grid;
+  grid-template-columns: var(--width-layout) 1fr var(--width-layout); }
+  @media (max-width: 767px) {
+    .l-grid {
+      --width-layout: 2rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .l-grid {
+      --width-layout: 6rem; } }
+  @media (min-width: 1024px) {
+    .l-grid {
+      --width-layout: 10rem; } }
+  @media (min-width: 1366px) {
+    .l-grid {
+      grid-template-columns: 1fr 1100px 1fr; } }
+
+.l-limit {
+  grid-column: 2 / span 1; }
+
+.tasklist {
+  margin: 5rem 0; }
+  .tasklist__header, .tasklist__board {
+    border-radius: 0.3rem;
+    border: 1px solid #e0e0e0; }
+  .tasklist__header {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background-color: white; }
+    @media (max-width: 767px) {
+      .tasklist__header {
+        text-align: center; } }
+    @media (min-width: 768px) {
+      .tasklist__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+  .tasklist__board {
+    background-color: white; }
+  .tasklist__message {
+    text-align: center; }
+
+.task {
+  padding: 0 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative; }
+  .task:last-child {
+    border-bottom: 1px solid transparent; }
+  .task__title {
+    margin: 1rem 0 0.5rem; }
+  .task__description {
+    max-width: 800px;
+    margin-bottom: 4rem; }
+  .task__time {
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700; }
+  .task__time span {
+    font-weight: normal; }
+  .task__btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 1.2rem; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .modal__content {
+    max-width: 600px;
+    width: 80vw;
+    padding: 3rem 2rem;
+    border-radius: 0.3rem;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    margin: 100px auto; }
+  .modal__close {
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+  .modal__title {
+    margin-bottom: 1rem; }
+  .modal__task-title {
+    margin-bottom: 2rem; }
+  .modal__task-input {
+    font-weight: 300;
+    border-bottom: 2px solid #e0e0e0;
+    transition: all 0.3s; }
+  .modal__task-input--alert {
+    border-bottom: 2px solid #933939; }
+  .modal__alert {
+    color: #933939;
+    font-size: 0.8rem; }
+  .modal__task-description {
+    margin-bottom: 2rem; }
+  .modal__btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 1.2rem; }
+
+.overflow-hiden {
+  overflow: hidden; }
+
+.show {
+  display: block; }

@@ -1,0 +1,39 @@
+/* Colors */
+$black-color: rgb(48, 48, 48);
+$white-color: hsl(0, 0%, 100%);
+$border-color: hsl(0, 0%, 88%);
+$grey-color: hsl(0, 0%, 97%);
+$success-color: hsl(120, 31%, 34%);
+$warning-color: hsl(0, 44%, 40%);
+
+/* Layout */
+:root {
+  --width-layout: 0;
+}
+
+/* Fonts */
+$h1-font-size: 1.8rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 0.8rem;
+$p-font-size: 1rem;
+
+/* z-index */
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+/* Breakpoints */
+$sm: 420px;
+
+$min-sm: 421px;
+$max-sm: 767px;
+
+$min-md: 768px;
+$max-md: 1023px;
+
+$min-lg: 1024px;
+$max-lg: 1365px;
+
+$hg: 1366px;
