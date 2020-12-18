@@ -5,6 +5,7 @@ Este repositorio se desarrollo con la intención de practicar HTML, CSS/Sass y J
 ## Lista de proyectos
 
 - [Lista de tareas simple](#tasklist)
+- [Reloj digital](#digitalclock)
 
 <h2 id="tasklist">Lista de tareas simple</h2>
 
@@ -19,4 +20,19 @@ Lista de tareas no persistente, donde es posible crear un tarea con un titulo y 
 
 <p align="center">
     <img src="https://github.com/lopepardo/Miniprojects/blob/main/images/Tasklist.PNG" width="600"></img>
+</p>
+
+<h2 id="digitalclock">Lista de tareas simple</h2>
+
+### Descripción
+
+Reloj digital usando el objeto nativo de Javascript Date() para obtener la hora actual y mostrarla en el navegador cada segundo.
+
+- Link del repo del proyecto: https://github.com/lopepardo/Miniprojects/tree/main/DigitalClock
+- Link en vivo: https://digitalclock.vercel.app/
+
+### Vista previa
+
+<p align="center">
+    <img src="https://github.com/lopepardo/Miniprojects/blob/main/images/DigitalClock.PNG" width="600"></img>
 </p>
