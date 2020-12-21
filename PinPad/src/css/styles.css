@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda&display=swap");
+
+:root {
+  --color-grey: hsla(199, 14%, 27%, 0.781);
+  --color-background: hsla(228, 12%, 92%, 0.719);
+  --color-pin-pad: hsl(0, 0%, 98%);
+
+  --color-green: hsl(120, 71%, 32%);
+  --color-red: hsl(0, 80%, 55%);
+  --color-red-light: hsla(0, 80%, 55%, 0.253);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Coda", cursive;
+  height: 100vh;
+  background-color: var(--color-background);
+}
+
+.title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.pin-login {
+  width: 300px;
+  height: 500px;
+  padding: 0 50px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  font-size: 2rem;
+  background: var(--color-pin-pad);
+  font-family: sans-serif;
+
+  box-shadow: 24px 34px 76px -39px rgba(0, 0, 0, 0.84);
+}
+
+.pin-login__display {
+  padding: 60px 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pin-login__input {
+  width: 40px;
+  height: 40px;
+  font-size: 3rem;
+  text-align: center;
+  background: var(--color-background);
+  color: var(--color-grey);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: default;
+}
+
+.pin-login__input--error {
+  color: #ff7474;
+  background: var(--color-red-light);
+  animation: loginError 0.1s 2;
+}
+
+@keyframes loginError {
+  25% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+}
+
+.pin-login__container {
+  display: flex;
+  align-content: flex-end;
+}
+
+.pin-login__numpad {
+  display: grid;
+  grid-template-columns: repeat(3, calc(200px / 3));
+  grid-template-rows: repeat(4, 80px);
+}
+
+.pin-login__key {
+  justify-self: center;
+  align-self: center;
+
+  width: 50px;
+  height: 50px;
+
+  font-family: "Coda", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-grey);
+
+  border: 1px solid var(--color-grey);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.pin-login__key:nth-of-type(10),
+.pin-login__key:last-child {
+  border: none;
+  color: var(--color-pin-pad);
+}
+.pin-login__key:nth-of-type(10) {
+  background-color: var(--color-red);
+}
+
+.pin-login__key:last-child {
+  background-color: var(--color-green);
+}
+
+.pin-login__key:active {
+  background: var(--color-background);
+  border: 1px solid var(--color-background);
+  color: hsla(0, 0%, 83%, 0.842);
+}

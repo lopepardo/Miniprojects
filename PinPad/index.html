@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin Pad App</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="title">Pin Pad with HTML, CSS & JS</h1>
+    <div class="container">
+      <div class="pin-login" id="mainPinLogin">
+        <div class="pin-login__display">
+          <input type="password" class="pin-login__input" readonly />
+          <input type="password" class="pin-login__input" readonly />
+          <input type="password" class="pin-login__input" readonly />
+          <input type="password" class="pin-login__input" readonly />
+        </div>
+        <div id="numpad" class="pin-login__container"></div>
+      </div>
+    </div>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
