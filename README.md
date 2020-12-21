@@ -6,6 +6,7 @@ Este repositorio se desarrollo con la intención de practicar HTML, CSS/Sass y J
 
 - [Lista de tareas simple](#tasklist)
 - [Reloj digital](#digitalclock)
+- [Pin pad](#pinpad)
 
 <h2 id="tasklist">Lista de tareas simple</h2>
 
@@ -36,3 +37,19 @@ Reloj digital usando el objeto nativo de Javascript Date() para obtener la hora 
 <p align="center">
     <img src="https://github.com/lopepardo/Miniprojects/blob/main/images/DigitalClock.PNG" width="600"></img>
 </p>
+
+<h2 id="pinpad">Pin pad</h2>
+
+### Descripción
+
+Pin pad donde el usuario puede establecer 4 digitos, limpiar pantalla y verificarlos si lo ha escrito correctamente.
+
+- Link del repo del proyecto: https://github.com/lopepardo/Miniprojects/tree/main/PinPad
+- Link en vivo: https://pinpad.vercel.app/
+
+### Vista previa
+
+<p align="center">
+    <img src="https://github.com/lopepardo/Miniprojects/blob/main/images/PinPad.PNG" width="250"></img>
+</p>
+
