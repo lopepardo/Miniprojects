@@ -1,0 +1,141 @@
+:root {
+  --black-color: hsl(210, 5%, 20%);
+  --white-color: hsl(214, 100%, 99%);
+  --blue-color: hsl(211, 51%, 55%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--black-color);
+}
+
+.wrapper,
+.posts {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 8900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .posts {
+    max-width: 66.666667%;
+  }
+}
+
+.title {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white-color);
+}
+
+.posts__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 3rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  position: relative;
+}
+
+.card__id {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  position: absolute;
+  top: -30px;
+  left: -30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card__text {
+  font-size: 1.2rem;
+}
+
+.posts__loader {
+  text-align: center;
+  margin-top: 2rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid var(--white-color);
+  border-color: var(--white-color) transparent var(--white-color) transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
